@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Text</title>
+</head>
+<body>
+
+<!-- HTML element to display the text -->
+<p id="demoText">This is where the text will be displayed.</p>
+<a href="index.html" >Dashboard</a>
+<script>
+    // Retrieve the text from localStorage
+    var newText = localStorage.getItem("userText");
+
+    // Get the paragraph element by its ID
+    var element = document.getElementById("demoText");
+
+    // Update the text content
+    element.textContent = newText;
+</script>
+
+</body>
+</html>

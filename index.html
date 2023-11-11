@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input</title>
+</head>
+<body>
+<!-- HTML elements with an input field and a button -->
+<input type="text" id="textInput" placeholder="Enter new text">
+<button onclick="updateText()">Update Text</button>
+<a href="Dashboard.html" >Index</a>
+<script>
+    function updateText() {
+        // Get the input field value
+        var newText = document.getElementById("textInput").value;
+
+        // Store the text in localStorage
+        localStorage.setItem("userText", newText);
+    }
+</script>
+
+</body>
+</html>
